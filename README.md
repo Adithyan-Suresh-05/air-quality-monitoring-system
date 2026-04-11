@@ -1,30 +1,26 @@
 # air-quality-monitoring-system
 Embedded Air Quality Monitoring System using ESP8266 (NodeMCU) that measures air pollution, temperature, and humidity in real-time and displays data locally on LCD and remotely using Blynk IoT platform.
+# 🌍 Embedded Air Quality Monitoring System
 
-# 🌍 Embedded Air Quality Monitoring System for Urban Environments
-
-## 📌 Project Overview
-This project is an Embedded System designed to monitor air quality in real-time using ESP8266 (NodeMCU). It measures air pollution, temperature, and humidity using sensors and displays the data locally on an LCD and remotely using the Blynk IoT platform.
-
----
-
-## 🎯 Objectives
-- Monitor air quality using MQ135 sensor  
-- Measure temperature and humidity using DHT11  
-- Display real-time data on LCD  
-- Send data to cloud using IoT (Blynk)  
-- Enable remote monitoring  
+![IoT](https://img.shields.io/badge/Project-IoT-blue)
+![Platform](https://img.shields.io/badge/Platform-ESP8266-green)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 ---
 
-## ⚙️ Components Used
+## 📌 Overview
+This project is an IoT-based Embedded System designed to monitor air quality in real-time. It uses ESP8266 (NodeMCU) along with MQ135 and DHT11 sensors to measure pollution levels, temperature, and humidity.
+
+The system displays data locally on an LCD and remotely through the Blynk cloud platform.
+
+---
+
+## ⚙️ Hardware Components
 - ESP8266 NodeMCU  
 - MQ135 Gas Sensor  
 - DHT11 Sensor  
 - 16x2 LCD Display (I2C)  
-- Breadboard  
-- Jumper Wires  
-- Power Supply  
+- Breadboard & Jumper Wires  
 
 ---
 
@@ -32,17 +28,19 @@ This project is an Embedded System designed to monitor air quality in real-time 
 
 | Component | NodeMCU Pin |
 |----------|------------|
-| MQ135 (Analog) | A0 |
-| DHT11 (Data) | D5 |
+| MQ135 | A0 |
+| DHT11 | D5 |
 | LCD SDA | D2 |
 | LCD SCL | D1 |
-| VCC | 3.3V / VIN |
-| GND | GND |
 
 ---
 
 ## 🧠 Working Principle
-The MQ135 sensor detects air pollution levels and sends analog signals to the NodeMCU. The DHT11 sensor provides temperature and humidity data. The NodeMCU processes this data and displays it on the LCD. At the same time, it sends the data to the Blynk cloud platform using Wi-Fi, allowing remote monitoring.
+The MQ135 sensor detects air quality levels and sends analog signals to NodeMCU. The DHT11 sensor measures temperature and humidity.
+
+NodeMCU processes the data and:
+- Displays values on LCD  
+- Sends data to Blynk cloud via Wi-Fi  
 
 ---
 
@@ -55,49 +53,54 @@ The MQ135 sensor detects air pollution levels and sends analog signals to the No
 
 ---
 
+## 🖥️ System Architecture
+(Add your architecture diagram image here)
+
+---
+
+## 🔄 Flowchart
+(Add your flowchart image here)
+
+---
+
 ## 📱 Blynk Dashboard
-The system sends data to the Blynk platform where users can view:
-- Air Quality  
-- Temperature  
-- Humidity  
+(Add screenshot here)
 
 ---
 
 ## 🚀 How to Run
-
 1. Install Arduino IDE  
 2. Install ESP8266 board support  
-3. Install required libraries:
-   - Blynk
-   - DHT
-   - LiquidCrystal_PCF8574
-4. Connect NodeMCU to PC  
-5. Upload the code  
-6. Open Serial Monitor  
-7. View data on LCD and Blynk dashboard  
+3. Install libraries:
+   - Blynk  
+   - DHT  
+   - LiquidCrystal_PCF8574  
+4. Upload code to NodeMCU  
+5. Connect to Wi-Fi  
+6. Monitor using LCD & Blynk  
 
 ---
 
 ## ⚠️ Challenges
-- Sensor calibration (MQ135)  
-- Wi-Fi connectivity issues  
-- Accurate data measurement  
+- Sensor calibration  
+- Wi-Fi stability  
+- Data accuracy  
 
 ---
 
-## 🔮 Future Scope
-- SMS/Alert system  
-- AI-based pollution prediction  
-- Data logging system  
-- Mobile app development  
-- Multi-gas detection  
+## 🔮 Future Improvements
+- AI-based prediction  
+- SMS alerts  
+- Data logging  
+- Multi-sensor integration  
 
 ---
 
-## 📷 Project Images
-(Add your project photos here)
+## 👨‍💻 Author
+**Adithyan Suresh**  
+Embedded Systems Project – 2026
 
 ---
 
 ## 📜 License
-This project is for educational purposes.
+This project is for academic and educational purposes.
