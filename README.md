@@ -93,10 +93,5 @@ The system sends data to the Blynk platform where users can view:
 
 ---
 
-## 📷 Project Images
-(Add your project photos here)
-
----
-
 ## 📜 License
 This project is for educational purposes.
